@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Button trigger modal -->
+<!-- Modal -->
+<div class="modal fade" id="previevPicModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content shadow border-secondary">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel text-muted">Picture Preview</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center mx-auto" id="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center">
+    <div class="spinner-border mb-3" role="status" id="spinner"></div>
+</div>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Picture</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody id="table-body-box">
+
+    </tbody>
+</table>
+{% endblock content %}
